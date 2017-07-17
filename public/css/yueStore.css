@@ -1,0 +1,166 @@
+/*公共样式*/
+body{
+    font:10px "microsoft yaHei","宋体",Arial,Helvetica,sans-serif;
+}
+ul,li,p,h1,h2,h3,h4,h5,h6{
+    margin:0;
+    padding:0;
+    border:none;
+    list-style:none;
+    font-family:"microsoft yaHei","宋体",Arial,Helvetica,sans-serif;
+}
+a{
+    text-decoration:none;
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.btn-style{
+    background-color:#E93B54!important;
+    color:#fff;
+    font-weight:bold;
+    padding-left:10px;
+    padding-right:10px;
+}
+h1{
+    color:#fff;
+}
+.red-class{
+    color:#E93B54;
+}
+/*导航条*/
+.img-bar{
+    display:block;
+    max-width:40px;
+    height:33px;
+}
+.bar-color{
+    background:#E93B54!important;
+}
+/*---------------------------------首页-home---------------------------------*/
+p{
+    font-size:1em;
+    color:#999;
+}
+.top-title{
+    margin:10px 0;
+    border-bottom:1px solid #ddd;
+}
+.first-part{
+    border-bottom:1px solid #ddd;
+}
+.first-part div:last-child{
+    border-left:1px solid #ddd;
+}
+.first-part div:last-child>img:first-child{
+    border-bottom:1px solid #ddd;
+}
+.shrink img{
+    max-width:75px;
+    margin: 0 auto;
+}
+.shrink{
+    text-align:center;
+}
+.fifth-part{
+    border-bottom:1px solid #ddd;
+}
+.fifth-part div:first-child{
+    border-right:1px solid #ddd;
+}
+.eleven-part div{
+    border:1px solid #ddd;
+}
+/*---------------------------------分类-list---------------------------------*/
+#list-content li.item{
+    border:none;
+}
+.list-part div:first-child ion-list{
+    padding:0;
+    margin:0;
+}
+.list-part div:first-child ion-list ion-item{
+    padding:20px 5px;
+    margin:0;
+    text-align: center;
+    font-size:0.8em;
+}
+/*---------------------------------购物车-cart---------------------------------*/
+#cart-footer{
+    justify-content:space-between;
+    background:rgba(0,0,0,0.5);
+}
+#cart-footer button{
+    /*width:50px;*/
+}
+.cal{
+    display:flex;
+    margin-top:10px;
+}
+.cal b{
+    border:1px solid #999;
+    text-align: center;
+    box-sizing:border-box;
+    width:22px;
+}
+.cal b:hover{
+    cursor:pointer;
+}
+.cal span{
+    border:1px solid #999;
+    padding:0 10px;
+    margin:0 5px;
+}
+/*---------------------------------详情页-detail---------------------------------*/
+#detail-tabs{
+    display:flex;
+    padding-bottom:15px;
+    justify-content:space-around;
+    font-size:1.5em;
+}
+#detail-tabs li:hover{
+    border-bottom:2px solid #E93B54;
+}
+.button-bar button{
+    margin-left:10px;
+    border-radius:5px;
+}
+span.detail-badge{
+    background:#E93B54;
+    padding:2px 7px;
+    border-radius:12px;
+}
+/*---------------------------------全部订单-order---------------------------------*/
+div.order-style{
+    display:flex;
+    justify-content:space-between;
+}
+/*---------------------------------注册-register---------------------------------*/
+#register-style label span{
+    border-right:1px solid #aaa;
+    padding-right:10px;
+    margin-right:15px;
+}
+/*---------------------------------搜索-search---------------------------------*/
+p.search-divider{
+    margin:25px 15px 15px 10px;
+    border-bottom:1px solid #aaa;
+}
+/*---------------------------------底部-footer---------------------------------*/
+.tab-item-active{
+    color:#E93B54;
+}
+/*---------------------------------我的-person---------------------------------*/
+div.person-head{
+    height:100px;
+    position:relative;
+}
+div.person-head img{
+    width:70px;
+    position:absolute;
+    left:50%;
+    top:18px;
+    margin-left:-35px;
+}

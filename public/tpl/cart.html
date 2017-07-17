@@ -1,0 +1,33 @@
+<ion-header-bar class="bar-color item-input-inset">
+    <a href="javascript:history.go(-1)" class="button icon-left ion-ios-arrow-left button-clear button-light"></a>
+    <h1 class="title">购物车</h1>
+    <button class="button icon-left ion-ios-trash button-clear button-light" ng-click="deleteCart()"></button>
+</ion-header-bar>
+<ion-content class="has-header has-footer" id="cart">
+    <div class="list list-inset">
+        <div class="row item" ng-repeat="temp in cartSelect track by $index">
+            <div class="col col-10 text-center">
+                <input type="checkbox" ng-click="chooseSome()" ng-model="temp.checkState"/>
+            </div>
+            <div class="col col-25">
+                <img ng-src="{{temp.img_sm}}">
+            </div>
+            <div class="col col-60 item-text-wrap">
+                <h3>{{temp.name}}</h3>
+                <p>{{temp.classify}}</p>
+                <b style="color:#E93B54">￥{{temp.price}}</b>
+                <div class="cal">
+                    <button ng-click="munus($index)">-</button>
+                    <span>{{temp.dishCount}}</span>
+                    <button ng-click="add($index)">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>
+<ion-footer-bar class="item-input-inset" id="cart-footer">
+    <h5>
+        <input type="checkbox" ng-click="chooseAll()" ng-model="selectAll"/><b>总价：￥{{sumAll()|number:2}}</b>（不含运费）
+    </h5>
+    <button class="button btn-style" ng-click="jumpToOrder()">去结算</button>
+</ion-footer-bar>

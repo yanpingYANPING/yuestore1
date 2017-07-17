@@ -1,0 +1,26 @@
+<div ng-include="'tpl/include/header.html'"></div>
+<ion-content class="has-header has-footer">
+    <div class="list list-inset" id="register-style">
+        <label class="item item-input">
+            <span>+86</span>
+            <input type="text" placeholder="请输入手机号码" id="phoneNum">
+        </label>
+        <label class="item item-input">
+            <input type="password" placeholder="请输入密码" id="upwd" textmode=“password”>
+        </label>
+        <label class="item item-input">
+            <input type="password" placeholder="确认密码" id="upwd2" textmode=“password”>
+        </label>
+        <label class="item item-input">
+            <input type="password" placeholder="请输入验证码" id="test"/>
+        </label>
+        <br/>
+        <input type="checkbox" checked id="isAgree"/>我阅读并同意遵守搜悦“服务条款”和隐私政策<br/><br/>
+
+        <div class="button-bar">
+            <button class="button button-positive" id="testBtn">获取验证码</button>
+            <button class="button button-positive" id="UserRegisterBtn">注册</button>
+        </div>
+    </div>
+</ion-content>
+<div ng-include="'tpl/include/footer.html'"></div>

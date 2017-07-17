@@ -1,0 +1,20 @@
+<div ng-include="'tpl/include/header.html'"></div>
+<ion-content class="has-header has-footer">
+    <div class="list list-inset">
+        <label  class="item item-input">
+            <input type="text" placeholder="用户名/手机号/搜悦账号" id="loginName">
+        </label>
+        <label class="item item-input">
+            <input type="password" textmode=“password” placeholder="请输入密码" id="loginUpwd">
+        </label>
+    </div>
+    <div class="row">
+        <div class="col col-30">
+            <button class="button button-positive button-full" ng-click="jump('Register')">注册</button>
+        </div>
+        <div class="col col-67">
+            <button class="button button-positive button-full" id="UserLoginBtn">登录</button>
+        </div>
+    </div>
+</ion-content>
+<div ng-include="'tpl/include/footer.html'"></div>
